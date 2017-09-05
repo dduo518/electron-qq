@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../asset/mod/src/css/layui.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 关闭 -->
+        <span class="qq_close">
+            <a  href="javascript:;" id="reload"><i class="layui-icon">reload</i></a>
+			<a  href="javascript:;" id="dev"><i class="layui-icon">dev</i></a>
+			<a  href="javascript:;" id="_hideBtn"><i class="layui-icon">-</i></a>
+			<a  href="javascript:;" id="_closeBtn"><i class="layui-icon">&#x1006;</i></a>
+		</span>
+        <div class="head">
+            <img src="../asset/images/head.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="../asset/images/001.jpg" alt="">
+            <div class="layui-form-item login-form">
+                <div class="layui-input-inline username">
+                    <input type="text" name="username" required lay-verify="required" placeholder="qq号码/手机/邮箱" autocomplete="off" class="layui-input">
+                    <i class="layui-icon" style="font-size:12px;color: #CCC;">&#xe61a;</i>
+                </div>
+                <div class="layui-form-mid layui-word-aux">
+                    <span href="javascript:(void)">注册账号</span>
+                </div>
+            </div>
+            <div class="layui-form-item login-form">
+                <div class="layui-input-inline">
+                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+
+                </div>
+                <div class="layui-form-mid layui-word-aux">
+                    <span href="javascript:">忘记密码</span>
+                </div>
+            </div>
+            <div class="layui-form-item login-form">
+                <div class="layui-form-mid layui-word-aux">
+                    <input type="checkbox" name="rememberPW" title="记住密码" lay-skin="primary">
+                    <span style="vertical-align: text-bottom;">记住密码</span>
+                </div>
+                <div class="layui-form-mid layui-word-aux">
+                    <input type="checkbox" name="autoLogin" title="自动登录" lay-skin="primary">
+                    <span style="vertical-align: text-bottom;">自动登录</span>
+                </div>
+            </div>
+            <div class="layui-form-item login-form form_login_btn">
+                <div class="layui-input-inline">
+                    <button class="layui-btn  layui-btn-small layui-btn-norma" style="width:100%;background:#01AAED;" data-type='login' id="loginByn">登录</button>
+                </div>
+            </div>
+        </div>
+        <div class="logining_load">
+
+            <h1 style="font-size: 20px;margin-bottom: 30px;">正在登录</h1>
+            <img src="../asset/images/loading.gif" alt="">
+            <p style="margin-top: 30px;">
+                <button id="cancelBtn" style="background: #01AAED;" class="layui-btn  layui-btn-small layui-btn-norma">取消</button>
+            </p>
+
+        </div>
+    </div>
+
+    <script src='./../asset/mod/jquery.js'></script>
+    <!--  <script src='./login.js'></script>
+    <script src='./../dev/dev.js'></script> -->
+    <script>
+        require('./login')
+    </script>
+</body>
+
+</html>
